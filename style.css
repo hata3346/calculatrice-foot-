@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #000000, #111111, #003300);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.calculator {
+  background: rgba(10, 10, 10, 0.95);
+  border: 1px solid rgba(0, 255, 100, 0.3);
+  border-radius: 25px;
+  padding: 25px;
+  width: 350px;
+  box-shadow: 0 0 25px rgba(0, 255, 100, 0.15);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #00ff88;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.header p {
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.screen {
+  background: black;
+  border: 1px solid rgba(0, 255, 100, 0.2);
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 255, 100, 0.08);
+}
+
+#display {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 32px;
+  text-align: right;
+  outline: none;
+}
+
+.line {
+  margin-top: 10px;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(0,255,100,0.2), rgba(255,255,255,0.1), rgba(255,0,0,0.2));
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  padding: 18px;
+  border: none;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  background: #1f1f1f;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.operator {
+  background: #00aa55;
+}
+
+.operator:hover {
+  background: #00cc66;
+}
+
+.red {
+  background: #cc2222;
+}
+
+.red:hover {
+  background: #ff3333;
+}
+
+.gray {
+  background: #555555;
+}
+
+.gray:hover {
+  background: #777777;
+}
+
+.goal {
+  grid-column: span 4;
+  background: linear-gradient(to right, #00cc66, #008844);
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.goal:hover {
+  background: linear-gradient(to right, #00ff88, #00aa55);
+}
+
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  margin-top: 20px;
+}
